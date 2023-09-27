@@ -47,3 +47,7 @@ def signup(request):
         messages.success(request, f'Your account was created. Your username is {name}. Head to login page')
         
     return render(request,'signup.html')
+
+
+def loginuser(request):
+    return render(request,'login.html')
