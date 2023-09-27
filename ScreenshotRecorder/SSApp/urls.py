@@ -4,4 +4,5 @@ from SSApp import views
 
 urlpatterns = [
     path('',views.home,name='Home'),
+    path('signup',views.signup,name='Signup'),
 ]
