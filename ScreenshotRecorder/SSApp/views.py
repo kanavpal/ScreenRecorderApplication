@@ -11,8 +11,8 @@ def home(request):
 
 
 def signup(request):
-    # if not request.user.is_anonymous:
-    #     return redirect("/signup")
+    if not request.user.is_anonymous:
+        return redirect("/udash")
     
     if request.method=="POST":
 
@@ -50,4 +50,20 @@ def signup(request):
 
 
 def loginuser(request):
+    if not request.user.is_anonymous:
+        return redirect('/udash')
+    if request.method=="POST":
+        username=request.POST.get('ID')
+        password=request.POST.get('password')
+        user = authenticate(username=username, password=password)
+        
+        if user is not None:
+            login(request,user)
+            return redirect('/udash')
+        else:
+            messages.error(request, 'Wrong username or password')
+            return render(request,'login.html')
     return render(request,'login.html')
+
+def udash(request):
+    return render(request,'udash.html')
