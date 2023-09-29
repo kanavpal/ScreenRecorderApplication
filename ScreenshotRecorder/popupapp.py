@@ -1,9 +1,10 @@
 from tkinter import *
 import tkinter.messagebox
 import pyscreenrec
+import fun
 recorder = pyscreenrec.ScreenRecorder()
 
-rec_status='stopped'
+# rec_status='stopped'
 
 root = tkinter.Tk()
 recorder = pyscreenrec.ScreenRecorder()
@@ -16,16 +17,17 @@ root.attributes("-topmost", True)
 # Create a messagebox showinfo
 
 def Start():
-	if rec_status=='stopped':
+	# if rec_status=='stopped':
 		tkinter.messagebox.showinfo("Recording Started")
 		recorder.start_recording("recording.mp4", 30)
 		rec_status='started'
 
 def End():
-	if rec_status=='stopped':
+	# if rec_status=='started':
 		tkinter.messagebox.showinfo("Recording Ended")
 		recorder.stop_recording()
 		rec_status='stopped'
+		fun.rename()
 
 # Create a Buttons
 

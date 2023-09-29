@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, logout, login, get_user_model
 from django.conf import settings
 import os
+import fun
 
 
 def home(request):
@@ -77,5 +78,6 @@ def udash(request):
 def recscreen(request):
     if request.user.is_anonymous:
         return redirect('/loginuser')
+    fun.newrecording(request.user.username)
     os.popen('py popupapp.py')
     return render(request,'udash.html')
