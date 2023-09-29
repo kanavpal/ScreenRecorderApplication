@@ -65,5 +65,11 @@ def loginuser(request):
             return render(request,'login.html')
     return render(request,'login.html')
 
+def logoutuser(request):
+    logout(request)
+    return redirect('/loginuser')
+
 def udash(request):
+    if request.user.is_anonymous:
+        return redirect('/loginuser')
     return render(request,'udash.html')
