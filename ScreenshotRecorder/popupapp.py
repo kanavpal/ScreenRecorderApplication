@@ -1,42 +1,39 @@
-# import everything from tkinter module
 from tkinter import *
-
-# import messagebox from tkinter module
 import tkinter.messagebox
+import pyscreenrec
+recorder = pyscreenrec.ScreenRecorder()
 
-# create a tkinter root window
+rec_status='stopped'
+
 root = tkinter.Tk()
+recorder = pyscreenrec.ScreenRecorder()
 
 # root window title and dimension
 root.title("When you press a any button the message will pop up")
-root.geometry('500x300')
+root.geometry('250x50')
 root.attributes("-topmost", True)
 
 # Create a messagebox showinfo
 
-def East():
-	tkinter.messagebox.showinfo("Welcome to GFG", "East Button clicked")
+def Start():
+	if rec_status=='stopped':
+		tkinter.messagebox.showinfo("Recording Started")
+		recorder.start_recording("recording.mp4", 30)
+		rec_status='started'
 
-def West():
-	tkinter.messagebox.showinfo("Welcome to GFG", "West Button clicked")
-
-def North():
-	tkinter.messagebox.showinfo("Welcome to GFG", "North Button clicked")
-
-def South():
-	tkinter.messagebox.showinfo("Welcome to GFG", "South Button clicked")
+def End():
+	if rec_status=='stopped':
+		tkinter.messagebox.showinfo("Recording Ended")
+		recorder.stop_recording()
+		rec_status='stopped'
 
 # Create a Buttons
 
-Button1 = Button(root, text="West", command=West, pady=10)
-Button2 = Button(root, text="East", command=East, pady=10)
-Button3 = Button(root, text="North", command=North, pady=10)
-Button4 = Button(root, text="South", command=South, pady=10)
+Button1 = Button(root, text="Start Recording", command=Start, pady=10)
+Button2 = Button(root, text="End Recording", command=End, pady=10)
 
 # Set the position of buttons
 Button1.pack(side=LEFT)
 Button2.pack(side=RIGHT)
-Button3.pack(side=TOP)
-Button4.pack(side=BOTTOM)
 
 root.mainloop()
