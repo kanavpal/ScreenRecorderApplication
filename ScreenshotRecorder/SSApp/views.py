@@ -73,7 +73,12 @@ def logoutuser(request):
 def udash(request):
     if request.user.is_anonymous:
         return redirect('/loginuser')
-    return render(request,'udash.html')
+    
+    name=request.user.username
+    video_list=fun.video_list(name)
+
+    dic={'video_list':video_list,'name':name}
+    return render(request,'udash.html',dic)
 
 def recscreen(request):
     if request.user.is_anonymous:

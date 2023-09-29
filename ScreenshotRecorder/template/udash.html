@@ -27,6 +27,7 @@
 			  
 					<ul class="nav nav-pills">
 					  <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                      <li class="nav-item"><a href="/udash" class="nav-link">User Dashboard</a></li>
 					  <li class="nav-item"><a href="/logoutuser" class="nav-link">Logout</a></li>
 					</ul>
 				  </header>
@@ -36,6 +37,27 @@
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
             <span class="fs-4">RECORD SCREEN</span>
           </a>
+
+          <br><br>
+
+          <h1>Saved ScreenRecordings</h1>
+    <ul>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">SCREENRECORDING</th>
+              </tr>
+            </thead>
+        
+            <tbody>
+        {% for video in video_list %}
+        <tr>
+          <td><a href="/static/screenrecordings/{{name}}/{{video}}">{{video}}</a></td>
+        </tr>
+        {% endfor %}        
+    </tbody>
+    </ul>
 
 		</body>
 		</html>

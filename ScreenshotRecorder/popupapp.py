@@ -18,16 +18,17 @@ root.attributes("-topmost", True)
 
 def Start():
 	# if rec_status=='stopped':
-		tkinter.messagebox.showinfo("Recording Started")
+		tkinter.messagebox.showinfo("Recording Started","Recording Started")
 		recorder.start_recording("recording.mp4", 30)
 		rec_status='started'
 
 def End():
 	# if rec_status=='started':
-		tkinter.messagebox.showinfo("Recording Ended")
 		recorder.stop_recording()
 		rec_status='stopped'
 		fun.rename()
+		tkinter.messagebox.showinfo("Recording Ended","Click on USER DASHBOARD to see your recording")
+		root.destroy()
 
 # Create a Buttons
 

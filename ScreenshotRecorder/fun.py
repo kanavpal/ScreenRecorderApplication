@@ -28,3 +28,8 @@ def fname():
     y=re.sub(r'[ :-]', '', str(x)[:-7])
     fname = f'VID{y}.mp4'
     return fname
+
+def video_list(name):
+    path=f"static/screenrecordings/{name}"
+    video_list=os.listdir(path)
+    return(video_list)
