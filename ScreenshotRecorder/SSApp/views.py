@@ -86,3 +86,14 @@ def recscreen(request):
     fun.newrecording(request.user.username)
     os.popen('py popupapp.py')
     return render(request,'udash.html')
+
+
+def vid(request):
+    if request.user.is_anonymous:
+        return redirect("/loginuser")
+    
+    video = request.GET.get('video')  # Retrieve the ps_id from the URL query parameters
+    name = request.user.username
+    path = f"screensrecordings/{name}/{video}"
+
+    return render(request, 'vid.html', {"path":path})

@@ -9,4 +9,5 @@ urlpatterns = [
     path('logoutuser',views.logoutuser,name='logout'),
     path('udash',views.udash,name='User Dashboard'),
     path('recscreen',views.recscreen,name='Record Screen'),
+    path('vid/',views.vid,name='Video Playback'),
 ]

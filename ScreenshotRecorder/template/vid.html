@@ -32,32 +32,9 @@
 					</ul>
 				  </header>
 		</div>
-        udash<br>
-        <a href="/recscreen" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">RECORD SCREEN</span>
-          </a>
-
-          <br><br>
-
-          <h1>Saved ScreenRecordings</h1>
-    <ul>
-
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">SCREENRECORDING</th>
-              </tr>
-            </thead>
-        
-            <tbody>
-        {% for video in video_list %}
-        <tr>
-          <td><a href="/vid/?video={{ video }}">{{video}}</a></td>
-        </tr>
-        {% endfor %}        
-    </tbody>
-    </ul>
-
+        <video width='320' height= '240' controls="controls">
+            <source src="{% static '{path}' type='video/mp4' %}">
+            Your browser does not support the video tag.
+            </video>
 		</body>
 		</html>
