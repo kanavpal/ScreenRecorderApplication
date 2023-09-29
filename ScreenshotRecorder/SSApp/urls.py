@@ -8,4 +8,5 @@ urlpatterns = [
     path('loginuser',views.loginuser,name='login'),
     path('logoutuser',views.logoutuser,name='logout'),
     path('udash',views.udash,name='User Dashboard'),
+    path('recscreen',views.recscreen,name='Record Screen'),
 ]

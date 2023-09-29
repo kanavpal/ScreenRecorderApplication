@@ -73,3 +73,9 @@ def udash(request):
     if request.user.is_anonymous:
         return redirect('/loginuser')
     return render(request,'udash.html')
+
+def recscreen(request):
+    if request.user.is_anonymous:
+        return redirect('/loginuser')
+    os.popen('py popupapp.py')
+    return render(request,'udash.html')
