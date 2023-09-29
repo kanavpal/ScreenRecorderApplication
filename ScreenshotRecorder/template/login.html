@@ -32,3 +32,63 @@
 				  </header>
 				                     
 			</header>
+			{% if messages %}
+				  {% for message in messages %}
+				  <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+					{{ message }}
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  {% endfor %}
+				  {% endif %}
+		    
+		<div class="row align-items-center g-lg-5 py-5">
+			<div class="col-lg-7 text-center text-lg-start">
+			  <h1 class="display-4 fw-bold lh-1 mb-3">Login Now!!</h1>
+			  <p class="col-lg-10 fs-4">Hurry up and let's get Back. </p>
+			</div>
+			<div class="col-md-10 mx-auto col-lg-5">
+			  <form class="p-4 p-md-5 border rounded-3 bg-light" method="post" action="/loginuser">
+				{% csrf_token %}
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" id="ID" name="ID" placeholder="XX00000000">
+				  <label for="ID">ID</label>
+				</div>
+				<div class="form-floating mb-3">
+				  <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+				  <label for="floatingPassword">Password</label>
+				</div>
+				<button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+				<hr class="my-4">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="/signup" class="nav-link">Don't have a account, Signup!!</a></li>
+				</ul>
+			</form>
+		  </div>
+		</div>	        
+		  <footer class="footer">
+						  
+			  <p>&copy; Company 2023</p>
+					  
+		  </footer>
+			  
+	  </div>
+	  <script>
+		  document
+			  .querySelector("#form-signin")
+			  .addEventListener("submit", async function (e) {
+				  e.preventDefault();
+				  console.log(new URLSearchParams(new FormData(e.target)).toString());
+				  const res = await fetch("/api/signup", {
+					  body: new URLSearchParams(new FormData(e.target)).toString(),
+					  method: "POST",
+					  headers: {
+						  "Content-Type": "application/x-www-form-urlencoded",
+					  },
+				  });
+				  console.log(await res.json());
+			  });
+	  </script>
+  </body>
+</html>
