@@ -1,1 +1,7 @@
 *DISCUSSION* (between me and my teammate)
+* In the first week ->
+
+* We both set up a meeting and decided how to make the screen recorder.
+* Akshit will be responsible for front end and some of the back end and Kanav will be responsible for back end (logic building) and documentation 
+* As i didn't knew how to use github properly so akshit also helped me with that a lot.
+* 
