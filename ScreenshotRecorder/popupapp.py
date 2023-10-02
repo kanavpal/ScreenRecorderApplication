@@ -27,7 +27,7 @@ def End():
 		recorder.stop_recording()
 		rec_status='stopped'
 		fun.rename()
-		tkinter.messagebox.showinfo("Recording Ended","Click on USER DASHBOARD to see your recording")
+		tkinter.messagebox.showinfo("Recording Ended","Refresh the page to see your recording")
 		root.destroy()
 
 # Create a Buttons

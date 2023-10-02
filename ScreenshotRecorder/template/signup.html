@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		{% load static %}
 		    
 		<title>Signup</title>
 		    
@@ -12,7 +13,7 @@
 		/>
 		<link href="../static/signup.css" rel="stylesheet" />
 	</head>
-	<body>
+	<body style="background-image: url('{% static 'bg.jpg' %}')">
 
 		
 
@@ -32,8 +33,6 @@
 					  <li class="nav-item"><a href="/" class="nav-l
 						<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 					  <li class="nav-item"><a href="/signup" class="nav-link">Registration/Login In</a></li>
-					  <li class="nav-item"><a href="/faq" class="nav-link">FAQs</a></li>
-					  <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
 					</ul>
 				  </header>
 
@@ -55,8 +54,7 @@
 		<div class="row align-items-center g-lg-5 py-5">
 			<div class="col-lg-7 text-center text-lg-start">
 			  <h1 class="display-4 fw-bold lh-1 mb-3">Sign-up Form</h1>
-			  <p class="col-lg-10 fs-4">Hurry up and enter the details to the best of your knowledge
-				and discover the top treanding topics of the tech industry. </p>
+			  <p class="col-lg-10 fs-4">Signup Here. </p>
 			</div>
 			<div class="col-md-10 mx-auto col-lg-5">
 			  <form class="p-4 p-md-5 border rounded-3 bg-light" method="post" action="/signup">
@@ -82,11 +80,7 @@
 			  </form>
 			</div>
 		  </div>	        
-			<footer class="footer">
-				            
-				<p>&copy; Company 2023</p>
-				        
-			</footer>
+			
 			    
 		</div>
 		<script>
