@@ -1,1 +1,10 @@
-*DISCUSSION* (between me and my teammate)
+*DISCUSSION* (between me and my teammate)>
+
+* We both set up a meeting and decided how to make the screen recorder.
+* Akshit will be responsible for front end and some of the back end and Kanav will be responsible for back end (logic building) and documentation 
+* As i didn't knew how to use github properly so akshit also helped me with that a lot.
+* we thought on how to approach this problem. We had two ideas one terminal based one web based.
+* We decided on web based so that we can provide an area for users to see their screenrecordings as well.
+* For website we decided on Django as it is Python based and it was required. Also HTML was used.
+* For recording screen we decided on pop up using tkinter which is python based gui library. It gives functioning of start stop of recording from any window on system.
+* For recording we used Pyscreenrec library.
