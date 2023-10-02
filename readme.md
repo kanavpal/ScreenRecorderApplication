@@ -8,13 +8,11 @@ Greetings adventurer! You've stumbled upon StellarScreen, a celestial project de
 
 - **User-Friendly Cosmos:** Navigate the universe of screen recording effortlessly with our intuitive interface, catering to celestial beings of all skill levels.
 
-- **Cosmic Configuration:** Harness the power of the stars by customizing recording settings. Tune video quality, frame rate, and audio input to align with your cosmic preferences.
-
 - **Format Shapeshifter:** Transform your recordings into the astral format of your choice, be it MP4, or a format only known to intergalactic sages.
 
 - **Multi-Monitor Harmony:** Capture celestial events across multiple monitors simultaneously, harmonizing your recordings like planets in orbit.
 
-- **Real-time Constellations:** Add constellations of text, shapes, and drawings to your recording in real-time. Craft interactive and captivating content that twinkles like stars in the night sky.
+- **Real-time Constellations:** Add constellations of text, shapes, and drawings to your recording in real-time. Craft interactive and captivating content that twinkles like stars in the night sky. ( not included just an idea )
 
 - **Time Warp Pause and Resume:** Temporarily halt your cosmic journey and seamlessly resume, bending time itself for maximum flexibility during your recording odyssey.
 
@@ -28,26 +26,7 @@ Ensure your spaceship is equipped with the following:
 
 - **Operating System:** Windows, macOS, or Linux – choose the cosmic plane that suits your journey.
 - **Dependencies:** Consult the ancient scrolls (documentation) for any additional tools required for your cosmic adventure.
-
-### Installation Ritual
-
-1. Invoke the powers of the repository:
-   ```bash
-   git clone https://github.com/your-username/stellarscreen.git
-   ```
-
-2. Conjure the dependencies:
-   ```bash
-   cd stellarscreen
-   npm install
-   ```
-
-3. Launch your cosmic vessel:
-   ```bash
-   npm start
-   ```
-
-4. Ascend to the recording realm through your web browser at `http://localhost:3000`.
+- **Python library**
 
 ## Casting Spells of Usage
 
@@ -60,19 +39,14 @@ Ensure your spaceship is equipped with the following:
 
 ## Joining Forces in the Galactic Codex
 
-We invite cosmic collaborators to contribute to our quest. Consult the [Galactic Codex](CONTRIBUTING.md) for guidelines on unleashing your magical contributions.
+We invite cosmic collaborators to contribute to our quest. 
 
 ## Starlight Signals and Nebula Notes
 
 Should you encounter celestial anomalies or wish to share your cosmic insights, send starlight signals via the [Astro Issue Tracker](https://github.com/your-username/stellarscreen/issues).
 
-## License: Universal Harmony Edition 🌌
+## Celestial Thanks
 
-This project is licensed under the MIT License - seek wisdom in the [LICENSE.md](LICENSE.md) tome for cosmic insights.
-
-## Celestial Thanks and Gratitude
-
-- A cosmic shoutout to [ThirdPartyConstellation](https://example.com/third-party-constellation) for their ethereal features that enrich our cosmic journey.
 - Endless gratitude to our cosmic contributors, the guiding stars lighting the path to greatness.
 
 Embark on your recording odyssey with StellarScreen, where the cosmos meets creativity! 🚀✨
