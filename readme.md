@@ -50,3 +50,5 @@ Should you encounter celestial anomalies or wish to share your cosmic insights, 
 - Endless gratitude to our cosmic contributors, the guiding stars lighting the path to greatness.
 
 Embark on your recording odyssey with StellarScreen, where the cosmos meets creativity! 🚀✨
+                                                                                                       
+                                                                                          **MADE BY : KANAV KUMAR AND AKSHIT BHUTANI**
