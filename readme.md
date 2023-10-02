@@ -43,7 +43,7 @@ We invite cosmic collaborators to contribute to our quest.
 
 ## Starlight Signals and Nebula Notes
 
-Should you encounter celestial anomalies or wish to share your cosmic insights, send starlight signals via the [Astro Issue Tracker](https://github.com/your-username/stellarscreen/issues).
+Should you encounter celestial anomalies or wish to share your cosmic insights, send starlight signals via the [Astro Issue Tracker] https://docs.google.com/forms/d/e/1FAIpQLSelYKiMV8VuCgEVDrufsxgF6nI94jg_ItFUt5Ef3saHCZ54nA/viewform?usp=sf_link 
 
 ## Celestial Thanks
 
