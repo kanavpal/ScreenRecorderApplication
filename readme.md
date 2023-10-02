@@ -45,6 +45,8 @@ We invite cosmic collaborators to contribute to our quest.
 
 Should you encounter celestial anomalies or wish to share your cosmic insights, send starlight signals via the [Astro Issue Tracker] https://docs.google.com/forms/d/e/1FAIpQLSelYKiMV8VuCgEVDrufsxgF6nI94jg_ItFUt5Ef3saHCZ54nA/viewform?usp=sf_link 
 
+https://docs.google.com/forms/d/1lYkBG3SnApWw6e56zLZJPVxqnb8b5Ta6Gz5AKW2YohM/edit 
+
 ## Celestial Thanks
 
 - Endless gratitude to our cosmic contributors, the guiding stars lighting the path to greatness.
