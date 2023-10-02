@@ -94,6 +94,6 @@ def vid(request):
     
     video = request.GET.get('video')  # Retrieve the ps_id from the URL query parameters
     name = request.user.username
-    path = f"screensrecordings/{name}/{video}"
+    path = f"screenrecordings/{name}/{video}"
 
     return render(request, 'vid.html', {"path":path})

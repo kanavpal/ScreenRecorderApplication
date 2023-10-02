@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path
 from SSApp import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.home,name='Home'),
@@ -11,3 +13,5 @@ urlpatterns = [
     path('recscreen',views.recscreen,name='Record Screen'),
     path('vid/',views.vid,name='Video Playback'),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
