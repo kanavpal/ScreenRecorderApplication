@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, logout, login, get_user_model
 from django.conf import settings
 import os
 import fun
+import subprocess
 
 
 def home(request):
@@ -85,7 +86,7 @@ def recscreen(request):
         return redirect('/loginuser')
     fun.newrecording(request.user.username)
     os.popen('py popupapp.py')
-    return render(request,'udash.html')
+    return redirect('/udash')
 
 
 def vid(request):
@@ -94,6 +95,10 @@ def vid(request):
     
     video = request.GET.get('video')  # Retrieve the ps_id from the URL query parameters
     name = request.user.username
-    path = f"screenrecordings/{name}/{video}"
+    path = f"static/screenrecordings/{name}/{video}"
 
-    return render(request, 'vid.html', {"path":path})
+    subprocess.Popen(['start', '', path], shell=True)
+
+    return redirect("/udash")
+
+    # return render(request, 'vid.html', {"path":path})
